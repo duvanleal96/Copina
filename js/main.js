@@ -71,3 +71,6 @@
 function changeclick(elemento){
     document.getElementById(elemento).scrollIntoView({behavior:'smooth',block:'start'});
 }
+
+
+
