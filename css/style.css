@@ -9524,14 +9524,14 @@ h6,
   }
 }
 
-.carousel-caption {
+/* .carousel-caption {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.);
   z-index: 1;
-}
+} */
 
 @media (max-width: 576px) {
   .carousel-caption h4 {
@@ -9558,15 +9558,24 @@ h6,
 
 .carousel-caption {
   display: none;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
+  position: relative;
+  bottom: 400px;
+  left: 70%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 5px;
   color: white;
-  transition: opacity 0.5s ease;
+  opacity: 0;
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+.carousel-item.active .carousel-caption {
+  opacity: 1; /* Visible cuando el ítem del carrusel está activo */
+  bottom: 300px; /* Ajusta este valor para el desplazamiento hacia arriba */
+}
+.carousel-img-opacity {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1; /* Ajusta este valor entre 0 (totalmente transparente) y 1 (totalmente opaco) según tus necesidades */
 }
 
 .carousel-item.active .carousel-caption {
