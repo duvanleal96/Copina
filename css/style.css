@@ -9521,6 +9521,21 @@ h6,
     margin-top: -42px;
     margin-block-end: -10%;
   }
+
+  #header-carousel .carousel-item img {
+    height: 800px; /* Ajusta esta altura según sea necesario */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el contenedor */
+  }
+  @media (min-width: 768px) {
+    #header-carousel .carousel-item img {
+        height: 800px; /* Ajusta esta altura para pantallas medianas */
+    }
+}
+@media (max-width: 767.98px) {
+  #header-carousel .carousel-item img {
+      height: 200px; /* Ajusta esta altura para pantallas pequeñas */
+  }
+}
   .page-header {
     margin-top: -42px;
   }
@@ -9775,20 +9790,6 @@ h6,
   .text-carousel {
     max-width: 230px;
   }
-  .carousel-caption {
-    display: none;
-    position: relative;
-    left: 60%;
-    bottom: 400px;
-    transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 5px;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.5s ease, bottom 0.5s ease;
-  }
-
   #text-span {
     z-index: 100;
     position: absolute;
@@ -9831,6 +9832,14 @@ h6,
     float: left;
   }
 }
+.justificado {
+  text-align: justify;
+}
+.service-item img {
+  width: 80px; /* Ancho de la imagen */
+  height: 80px; /* Altura de la imagen */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
 
 @media only screen and (min-width: 650px) and (max-width: 764px) {
   .logo-navbar {
@@ -9839,6 +9848,7 @@ h6,
   .text-carousel {
     max-width: 438px;
   }
+
   .carousel-caption {
     display: none;
     position: relative;
@@ -9871,19 +9881,6 @@ h6,
   .text-carousel {
     max-width: 560px;
   }
-  .carousel-caption {
-    display: none;
-    position: relative;
-    bottom: 400px;
-    left: 55%;
-    transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 5px;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.5s ease, bottom 0.5s ease;
-  }
 
   #text-span {
     z-index: 100;
@@ -9906,8 +9903,8 @@ h6,
     display: none;
     position: relative;
     bottom: 400px;
-    left: 70%;
-    transform: translateX(-50%);
+    left: 78%;
+    transform: translateX(-50%) translateY(60px);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
