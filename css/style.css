@@ -7442,6 +7442,10 @@ button.bg-dark:focus {
   margin-bottom: 3rem !important;
 }
 
+.mb-6{
+  margin-bottom: 8rem !important;
+}
+
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important;
@@ -8524,9 +8528,12 @@ button.bg-dark:focus {
   .m-lg-5 {
     margin: 3rem !important;
   }
-  .mt-lg-5,
   .my-lg-5 {
     margin-top: 3rem !important;
+  }
+  .mt-lg-5{
+    margin-top: 8rem !important;
+
   }
   .mr-lg-5,
   .mx-lg-5 {
@@ -9796,7 +9803,7 @@ h6,
     color: white;
     font-size: 20px;
     font-weight: bold;
-    top: 170px;
+    top: 50px;
     float: left;
   }
 }
@@ -9882,12 +9889,27 @@ h6,
     max-width: 560px;
   }
 
+  .carousel-caption {
+    display: none;
+    position: relative;
+    bottom: 400px;
+    left: 58%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+  }
+
   #text-span {
     z-index: 100;
+    position: absolute;
     color: white;
     font-size: 37px;
     font-weight: bold;
-    top: 88px;
+    top: 22px;
     float: left;
   }
 }
@@ -9902,9 +9924,9 @@ h6,
   .carousel-caption {
     display: none;
     position: relative;
-    bottom: 400px;
-    left: 78%;
-    transform: translateX(-50%) translateY(60px);
+    bottom: 1400px;
+    left: 76%;
+    transform: translateX(-50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
@@ -9915,10 +9937,11 @@ h6,
   
   #text-span {
     z-index: 100;
+    position: absolute;
     color: white;
     font-size: 40px;
     font-weight: bold;
-    top: 88px;
+    top: 64px;
     float: left;
   }
 }
