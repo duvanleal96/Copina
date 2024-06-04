@@ -9530,12 +9530,12 @@ h6,
   }
 
   #header-carousel .carousel-item img {
-    height: 800px; /* Ajusta esta altura según sea necesario */
+    height: 550px; /* Ajusta esta altura según sea necesario */
     object-fit: cover; /* Esto asegura que la imagen cubra todo el contenedor */
   }
   @media (min-width: 768px) {
     #header-carousel .carousel-item img {
-        height: 800px; /* Ajusta esta altura para pantallas medianas */
+        height: 550px; /* Ajusta esta altura para pantallas medianas */
     }
 }
 @media (max-width: 767.98px) {
